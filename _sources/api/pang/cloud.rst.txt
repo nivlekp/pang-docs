@@ -1,0 +1,88 @@
+.. _pang--cloud:
+
+cloud
+=====
+
+.. automodule:: pang.cloud
+
+.. currentmodule:: pang.cloud
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.cloud
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~Cloud
+
+.. autoclass:: Cloud
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      arrival_instances
+      arrival_model
+      durations
+      durations_in_millesecond
+      durations_msps
+      durations_per_server
+      make_cloud
+      number_of_notes
+      pitches
+      pitches_per_server
+      service_model
+      voice_names
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Methods
+      :class: class-header
+
+   .. automethod:: Cloud.make_cloud
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read-only properties
+      :class: class-header
+
+   .. autoattribute:: Cloud.arrival_instances
+
+   .. autoattribute:: Cloud.arrival_model
+
+   .. autoattribute:: Cloud.durations
+
+   .. autoattribute:: Cloud.durations_in_millesecond
+
+   .. autoattribute:: Cloud.durations_msps
+
+   .. autoattribute:: Cloud.durations_per_server
+
+   .. autoattribute:: Cloud.number_of_notes
+
+   .. autoattribute:: Cloud.pitches
+
+   .. autoattribute:: Cloud.pitches_per_server
+
+   .. autoattribute:: Cloud.service_model
+
+   .. autoattribute:: Cloud.voice_names

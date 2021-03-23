@@ -1,0 +1,27 @@
+.. _pang--sieves:
+
+sieves
+======
+
+.. automodule:: pang.sieves
+
+.. currentmodule:: pang.sieves
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.sieves
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Functions
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~gen_pitches_from_sieve
+
+.. autofunction:: gen_pitches_from_sieve

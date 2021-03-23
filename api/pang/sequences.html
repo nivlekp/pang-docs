@@ -1,0 +1,481 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>sequences &mdash; Pang API 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/abjad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/uqbar.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="../../_static/copybutton.js"></script>
+        <script src="../../_static/ga.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sieves" href="sieves.html" />
+    <link rel="prev" title="segmentmaker" href="segmentmaker.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Pang API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Pang API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">pang</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cloud.html">cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commands.html">commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="noteserver.html">noteserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="postprocessors.html">postprocessors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scoping.html">scoping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="segmentmaker.html">segmentmaker</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sequences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sieves.html">sieves</a></li>
+<li class="toctree-l3"><a class="reference internal" href="soundpointsgenerators.html">soundpointsgenerators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="templates.html">templates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Pang API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Pang API</a> &raquo;</li>
+        
+          <li><a href="index.html">pang</a> &raquo;</li>
+        
+      <li>sequences</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/api/pang/sequences.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pang.sequences">
+<span id="sequences"></span><span id="pang-sequences"></span><h1>sequences<a class="headerlink" href="#module-pang.sequences" title="Permalink to this headline">¶</a></h1>
+<div class="svg-container docutils container">
+<div class="graphviz"><object data="../../_images/inheritance-6f92495f109bc651c21a76fdb17047adbe77ccf3.svg" type="image/svg+xml" class="inheritance graphviz">
+<p class="warning">digraph InheritanceGraph {
+    graph [bgcolor=transparent,
+        color=lightsteelblue2,
+        fontname=Arial,
+        fontsize=10,
+        outputorder=edgesfirst,
+        overlap=prism,
+        penwidth=2,
+        rankdir=LR,
+        splines=spline,
+        style=&quot;dashed, rounded&quot;,
+        truecolor=true];
+    node [colorscheme=pastel19,
+        fontname=Arial,
+        fontsize=10,
+        height=0,
+        penwidth=2,
+        shape=box,
+        style=&quot;filled, rounded&quot;,
+        width=0];
+    edge [color=lightslategrey,
+        penwidth=1];
+    subgraph cluster_builtins {
+        graph [label=builtins];
+        node [color=1];
+        &quot;builtins.object&quot; [URL=&quot;https://docs.python.org/3.9/library/functions.html#object&quot;,
+            label=object,
+            target=_top];
+    }
+    subgraph &quot;cluster_pang.sequences&quot; {
+        graph [label=&quot;pang.sequences&quot;];
+        node [color=2];
+        &quot;pang.sequences.Sequence&quot; [URL=&quot;../api/pang/sequences.html#pang.sequences.Sequence&quot;,
+            color=black,
+            fontcolor=white,
+            label=Sequence,
+            target=_top];
+    }
+    &quot;builtins.object&quot; -&gt; &quot;pang.sequences.Sequence&quot;;
+}</p></object></div>
+</div>
+<hr/><p class="section-header rubric">Classes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence" title="pang.sequences.Sequence"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sequence</span></code></a></p></td>
+<td><p>Sequence of sound-points.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt id="pang.sequences.Sequence">
+<em class="property">class </em><code class="sig-prename descclassname">pang.sequences.</code><code class="sig-name descname">Sequence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sound_points_generator</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">nservers</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">sequence_duration</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sequence of sound-points.</p>
+<hr/><p class="class-header rubric">Attributes Summary</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.__len__" title="pang.sequences.Sequence.__len__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.__repr__" title="pang.sequences.Sequence.__repr__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code></a></p></td>
+<td><p>Gets interpreter representation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.durations" title="pang.sequences.Sequence.durations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">durations</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.durations_in_millesecond" title="pang.sequences.Sequence.durations_in_millesecond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">durations_in_millesecond</span></code></a></p></td>
+<td><p>Returns the duration of each note in millesecond (before queue simulation).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.extend" title="pang.sequences.Sequence.extend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code></a></p></td>
+<td><p>Extends a sequence with another.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.insert" title="pang.sequences.Sequence.insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code></a></p></td>
+<td><p>Inserts a sequence into another.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.instances" title="pang.sequences.Sequence.instances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">instances</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.nservers" title="pang.sequences.Sequence.nservers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nservers</span></code></a></p></td>
+<td><p>Returns the number of servers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.pitches" title="pang.sequences.Sequence.pitches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pitches</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.sequence_duration" title="pang.sequences.Sequence.sequence_duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence_duration</span></code></a></p></td>
+<td><p>Returns the sequence duration in seconds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.servers" title="pang.sequences.Sequence.servers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">servers</span></code></a></p></td>
+<td><p>Returns the servers that are attached to this sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.simulate_queue" title="pang.sequences.Sequence.simulate_queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">simulate_queue</span></code></a></p></td>
+<td><p>Simulate the queue based on the queue type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.superpose" title="pang.sequences.Sequence.superpose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">superpose</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<hr/><p class="class-header rubric">Special methods</p>
+<dl class="py method">
+<dt id="pang.sequences.Sequence.__len__">
+<code class="sig-name descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.__len__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pang.sequences.Sequence.__repr__">
+<em class="property">overridden </em><code class="sig-name descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets interpreter representation.</p>
+</dd></dl>
+
+<hr/><p class="class-header rubric">Methods</p>
+<dl class="py method">
+<dt id="pang.sequences.Sequence.extend">
+<code class="sig-name descname">extend</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sequence</span></em>, <em class="sig-param"><span class="n">time_gap</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.extend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends a sequence with another.</p>
+<div class="example docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">instances</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">durations</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sound_points_generator</span> <span class="o">=</span> <span class="n">pang</span><span class="o">.</span><span class="n">ManualSoundPointsGenerator</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">instances</span><span class="o">=</span><span class="n">instances</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">durations</span><span class="o">=</span><span class="n">durations</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sequence_0</span> <span class="o">=</span> <span class="n">pang</span><span class="o">.</span><span class="n">Sequence</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">sound_points_generator</span><span class="o">=</span><span class="n">sound_points_generator</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">sequence_duration</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sequence_1</span> <span class="o">=</span> <span class="n">pang</span><span class="o">.</span><span class="n">Sequence</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">sound_points_generator</span><span class="o">=</span><span class="n">sound_points_generator</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sequence_0</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">sequence_1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">sequence_0</span><span class="o">.</span><span class="n">instances</span><span class="p">)</span>
+<span class="go">[0, 1, 2, 3, 4, 5, 6, 7]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">sequence_0</span><span class="o">.</span><span class="n">durations</span><span class="p">)</span>
+<span class="go">[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]</span>
+</pre></div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pang.sequences.Sequence.insert">
+<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">offset</span></em>, <em class="sig-param"><span class="n">sequence</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a sequence into another. <code class="docutils literal notranslate"><span class="pre">offset</span></code> should be specified in
+seconds.</p>
+<div class="example docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">instances</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">durations</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pitches</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sound_points_generator</span> <span class="o">=</span> <span class="n">pang</span><span class="o">.</span><span class="n">ManualSoundPointsGenerator</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">instances</span><span class="o">=</span><span class="n">instances</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">durations</span><span class="o">=</span><span class="n">durations</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">pitches</span><span class="o">=</span><span class="n">pitches</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sequence_0</span> <span class="o">=</span> <span class="n">pang</span><span class="o">.</span><span class="n">Sequence</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">sound_points_generator</span><span class="o">=</span><span class="n">sound_points_generator</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">sequence_duration</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pitches</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sound_points_generator</span> <span class="o">=</span> <span class="n">pang</span><span class="o">.</span><span class="n">ManualSoundPointsGenerator</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">instances</span><span class="o">=</span><span class="n">instances</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">durations</span><span class="o">=</span><span class="n">durations</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">pitches</span><span class="o">=</span><span class="n">pitches</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sequence_1</span> <span class="o">=</span> <span class="n">pang</span><span class="o">.</span><span class="n">Sequence</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">sound_points_generator</span><span class="o">=</span><span class="n">sound_points_generator</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">sequence_duration</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sequence_0</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">sequence_1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">sequence_0</span><span class="o">.</span><span class="n">instances</span><span class="p">)</span>
+<span class="go">[0, 1, 2, 3, 4, 5, 6, 7]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">sequence_0</span><span class="o">.</span><span class="n">pitches</span><span class="p">)</span>
+<span class="go">[0, 0, 1, 1, 1, 1, 0, 0]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">sequence_0</span><span class="o">.</span><span class="n">durations</span><span class="p">)</span>
+<span class="go">[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]</span>
+</pre></div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pang.sequences.Sequence.simulate_queue">
+<code class="sig-name descname">simulate_queue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.simulate_queue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulate the queue based on the queue type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pang.sequences.Sequence.superpose">
+<code class="sig-name descname">superpose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sequence</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.superpose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<hr/><p class="class-header rubric">Read-only properties</p>
+<dl class="py attribute">
+<dt id="pang.sequences.Sequence.durations">
+<code class="sig-name descname">durations</code><a class="headerlink" href="#pang.sequences.Sequence.durations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.sequences.Sequence.durations_in_millesecond">
+<code class="sig-name descname">durations_in_millesecond</code><a class="headerlink" href="#pang.sequences.Sequence.durations_in_millesecond" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the duration of each note in millesecond (before queue
+simulation).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.sequences.Sequence.instances">
+<code class="sig-name descname">instances</code><a class="headerlink" href="#pang.sequences.Sequence.instances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.sequences.Sequence.nservers">
+<code class="sig-name descname">nservers</code><a class="headerlink" href="#pang.sequences.Sequence.nservers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of servers.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.sequences.Sequence.pitches">
+<code class="sig-name descname">pitches</code><a class="headerlink" href="#pang.sequences.Sequence.pitches" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.sequences.Sequence.sequence_duration">
+<code class="sig-name descname">sequence_duration</code><a class="headerlink" href="#pang.sequences.Sequence.sequence_duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sequence duration in seconds.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.sequences.Sequence.servers">
+<code class="sig-name descname">servers</code><a class="headerlink" href="#pang.sequences.Sequence.servers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the servers that are attached to this sequence.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="sieves.html" class="btn btn-neutral float-right" title="sieves" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="segmentmaker.html" class="btn btn-neutral float-left" title="segmentmaker" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Tsz Kiu Pang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

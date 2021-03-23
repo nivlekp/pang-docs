@@ -1,0 +1,74 @@
+.. _pang--segmentmaker:
+
+segmentmaker
+============
+
+.. automodule:: pang.segmentmaker
+
+.. currentmodule:: pang.segmentmaker
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.segmentmaker
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~SegmentMaker
+
+.. autoclass:: SegmentMaker
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+      lilypond_file
+      metadata
+      run
+      score
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: SegmentMaker.__call__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Methods
+      :class: class-header
+
+   .. automethod:: SegmentMaker.run
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read-only properties
+      :class: class-header
+
+   .. autoattribute:: SegmentMaker.lilypond_file
+
+   .. autoattribute:: SegmentMaker.metadata
+
+   .. autoattribute:: SegmentMaker.score

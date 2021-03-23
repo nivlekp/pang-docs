@@ -1,0 +1,73 @@
+.. _pang--noteserver:
+
+noteserver
+==========
+
+.. automodule:: pang.noteserver
+
+.. currentmodule:: pang.noteserver
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.noteserver
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~NoteServer
+
+.. autoclass:: NoteServer
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      durations
+      durations_in_millisecond
+      offset_instance
+      pitch_set
+      pitches
+      q_event_sequence
+      serve
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Methods
+      :class: class-header
+
+   .. automethod:: NoteServer.serve
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read-only properties
+      :class: class-header
+
+   .. autoattribute:: NoteServer.durations
+
+   .. autoattribute:: NoteServer.durations_in_millisecond
+
+   .. autoattribute:: NoteServer.offset_instance
+
+   .. autoattribute:: NoteServer.pitch_set
+
+   .. autoattribute:: NoteServer.pitches
+
+   .. autoattribute:: NoteServer.q_event_sequence

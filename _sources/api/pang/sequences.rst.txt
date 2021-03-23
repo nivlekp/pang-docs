@@ -1,0 +1,98 @@
+.. _pang--sequences:
+
+sequences
+=========
+
+.. automodule:: pang.sequences
+
+.. currentmodule:: pang.sequences
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.sequences
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~Sequence
+
+.. autoclass:: Sequence
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __len__
+      __repr__
+      durations
+      durations_in_millesecond
+      extend
+      insert
+      instances
+      nservers
+      pitches
+      sequence_duration
+      servers
+      simulate_queue
+      superpose
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: Sequence.__len__
+
+   .. automethod:: Sequence.__repr__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Methods
+      :class: class-header
+
+   .. automethod:: Sequence.extend
+
+   .. automethod:: Sequence.insert
+
+   .. automethod:: Sequence.simulate_queue
+
+   .. automethod:: Sequence.superpose
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read-only properties
+      :class: class-header
+
+   .. autoattribute:: Sequence.durations
+
+   .. autoattribute:: Sequence.durations_in_millesecond
+
+   .. autoattribute:: Sequence.instances
+
+   .. autoattribute:: Sequence.nservers
+
+   .. autoattribute:: Sequence.pitches
+
+   .. autoattribute:: Sequence.sequence_duration
+
+   .. autoattribute:: Sequence.servers

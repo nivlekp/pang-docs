@@ -1,0 +1,48 @@
+.. _pang:
+
+pang
+====
+
+.. automodule:: pang
+
+.. currentmodule:: pang
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Subpackages
+   :class: section-header
+
+.. toctree::
+   :hidden:
+
+   cloud
+   commands
+   noteserver
+   postprocessors
+   scoping
+   segmentmaker
+   sequences
+   sieves
+   soundpointsgenerators
+   templates
+
+.. autosummary::
+   :nosignatures:
+
+   cloud
+   commands
+   noteserver
+   postprocessors
+   scoping
+   segmentmaker
+   sequences
+   sieves
+   soundpointsgenerators
+   templates

@@ -1,0 +1,72 @@
+.. _pang--commands:
+
+commands
+========
+
+.. automodule:: pang.commands
+
+.. currentmodule:: pang.commands
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.commands
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~Command
+   ~QuantizeSequenceCommand
+
+.. autoclass:: Command
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: Command.__call__
+
+.. autoclass:: QuantizeSequenceCommand
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: QuantizeSequenceCommand.__call__

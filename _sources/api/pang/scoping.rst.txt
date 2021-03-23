@@ -1,0 +1,48 @@
+.. _pang--scoping:
+
+scoping
+=======
+
+.. automodule:: pang.scoping
+
+.. currentmodule:: pang.scoping
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.scoping
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~Scope
+
+.. autoclass:: Scope
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      voice_name
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read-only properties
+      :class: class-header
+
+   .. autoattribute:: Scope.voice_name

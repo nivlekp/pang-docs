@@ -1,0 +1,27 @@
+.. _pang--templates:
+
+templates
+=========
+
+.. automodule:: pang.templates
+
+.. currentmodule:: pang.templates
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.templates
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Functions
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~make_single_staff_score_template
+
+.. autofunction:: make_single_staff_score_template

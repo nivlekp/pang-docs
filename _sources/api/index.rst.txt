@@ -1,0 +1,223 @@
+Pang API
+========
+
+.. toctree::
+   :hidden:
+
+   pang/index
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang <pang>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.cloud <pang--cloud>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.cloud.Cloud
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.commands <pang--commands>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.commands.Command
+   ~pang.commands.QuantizeSequenceCommand
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.noteserver <pang--noteserver>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.noteserver.NoteServer
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.postprocessors <pang--postprocessors>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.postprocessors.ManualOttavaHandler
+   ~pang.postprocessors.OttavaHandler
+   ~pang.postprocessors.VerboseOttavaHandler
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Functions
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.postprocessors.pad_voices_with_grace_skips
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.scoping <pang--scoping>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.scoping.Scope
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.segmentmaker <pang--segmentmaker>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.segmentmaker.SegmentMaker
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.sequences <pang--sequences>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.sequences.Sequence
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.sieves <pang--sieves>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Functions
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.sieves.gen_pitches_from_sieve
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.soundpointsgenerators <pang--soundpointsgenerators>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.soundpointsgenerators.AtaxicSoundPointsGenerator
+   ~pang.soundpointsgenerators.GRWSoundPointsGenerator
+   ~pang.soundpointsgenerators.ManualSoundPointsGenerator
+   ~pang.soundpointsgenerators.RandomWalkSoundPointsGenerator
+   ~pang.soundpointsgenerators.SoundPointsGenerator
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: :ref:`pang.templates <pang--templates>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Functions
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.templates.make_single_staff_score_template

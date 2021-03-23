@@ -1,0 +1,133 @@
+.. _pang--postprocessors:
+
+postprocessors
+==============
+
+.. automodule:: pang.postprocessors
+
+.. currentmodule:: pang.postprocessors
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.postprocessors
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~ManualOttavaHandler
+   ~OttavaHandler
+   ~VerboseOttavaHandler
+
+.. autoclass:: ManualOttavaHandler
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+      n
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: ManualOttavaHandler.__call__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read-only properties
+      :class: class-header
+
+   .. autoattribute:: ManualOttavaHandler.n
+
+.. autoclass:: OttavaHandler
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: OttavaHandler.__call__
+
+.. autoclass:: VerboseOttavaHandler
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+      high_threshold
+      low_threshold
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: VerboseOttavaHandler.__call__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read-only properties
+      :class: class-header
+
+   .. autoattribute:: VerboseOttavaHandler.high_threshold
+
+   .. autoattribute:: VerboseOttavaHandler.low_threshold
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Functions
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pad_voices_with_grace_skips
+
+.. autofunction:: pad_voices_with_grace_skips

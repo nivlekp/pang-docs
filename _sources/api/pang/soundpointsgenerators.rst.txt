@@ -1,0 +1,133 @@
+.. _pang--soundpointsgenerators:
+
+soundpointsgenerators
+=====================
+
+.. automodule:: pang.soundpointsgenerators
+
+.. currentmodule:: pang.soundpointsgenerators
+
+.. container:: svg-container
+
+   .. inheritance-diagram:: pang
+      :lineage: pang.soundpointsgenerators
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: section-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~AtaxicSoundPointsGenerator
+   ~GRWSoundPointsGenerator
+   ~ManualSoundPointsGenerator
+   ~RandomWalkSoundPointsGenerator
+   ~SoundPointsGenerator
+
+.. autoclass:: AtaxicSoundPointsGenerator
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. container:: inherited
+
+      .. automethod:: AtaxicSoundPointsGenerator.__call__
+
+   .. container:: inherited
+
+      .. automethod:: AtaxicSoundPointsGenerator.__repr__
+
+.. autoclass:: GRWSoundPointsGenerator
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. container:: inherited
+
+      .. automethod:: GRWSoundPointsGenerator.__call__
+
+   .. container:: inherited
+
+      .. automethod:: GRWSoundPointsGenerator.__repr__
+
+.. autoclass:: ManualSoundPointsGenerator
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: ManualSoundPointsGenerator.__call__
+
+   .. container:: inherited
+
+      .. automethod:: ManualSoundPointsGenerator.__repr__
+
+.. autoclass:: RandomWalkSoundPointsGenerator
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. container:: inherited
+
+      .. automethod:: RandomWalkSoundPointsGenerator.__call__
+
+   .. container:: inherited
+
+      .. automethod:: RandomWalkSoundPointsGenerator.__repr__
+
+.. autoclass:: SoundPointsGenerator
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      __call__
+      __repr__
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Special methods
+      :class: class-header
+
+   .. automethod:: SoundPointsGenerator.__call__
+
+   .. automethod:: SoundPointsGenerator.__repr__

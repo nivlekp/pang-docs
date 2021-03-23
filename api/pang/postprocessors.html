@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>postprocessors &mdash; Pang API 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/abjad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/uqbar.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="../../_static/copybutton.js"></script>
+        <script src="../../_static/ga.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="scoping" href="scoping.html" />
+    <link rel="prev" title="noteserver" href="noteserver.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Pang API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Pang API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">pang</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cloud.html">cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commands.html">commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="noteserver.html">noteserver</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">postprocessors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scoping.html">scoping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="segmentmaker.html">segmentmaker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sequences.html">sequences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sieves.html">sieves</a></li>
+<li class="toctree-l3"><a class="reference internal" href="soundpointsgenerators.html">soundpointsgenerators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="templates.html">templates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Pang API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Pang API</a> &raquo;</li>
+        
+          <li><a href="index.html">pang</a> &raquo;</li>
+        
+      <li>postprocessors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/api/pang/postprocessors.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pang.postprocessors">
+<span id="postprocessors"></span><span id="pang-postprocessors"></span><h1>postprocessors<a class="headerlink" href="#module-pang.postprocessors" title="Permalink to this headline">¶</a></h1>
+<div class="svg-container docutils container">
+<div class="graphviz"><object data="../../_images/inheritance-2cb02de908db6fb801ddacb7fd9e859cbc982f06.svg" type="image/svg+xml" class="inheritance graphviz">
+<p class="warning">digraph InheritanceGraph {
+    graph [bgcolor=transparent,
+        color=lightsteelblue2,
+        fontname=Arial,
+        fontsize=10,
+        outputorder=edgesfirst,
+        overlap=prism,
+        penwidth=2,
+        rankdir=LR,
+        splines=spline,
+        style=&quot;dashed, rounded&quot;,
+        truecolor=true];
+    node [colorscheme=pastel19,
+        fontname=Arial,
+        fontsize=10,
+        height=0,
+        penwidth=2,
+        shape=box,
+        style=&quot;filled, rounded&quot;,
+        width=0];
+    edge [color=lightslategrey,
+        penwidth=1];
+    subgraph cluster_builtins {
+        graph [label=builtins];
+        node [color=1];
+        &quot;builtins.object&quot; [URL=&quot;https://docs.python.org/3.9/library/functions.html#object&quot;,
+            label=object,
+            target=_top];
+    }
+    subgraph &quot;cluster_pang.postprocessors&quot; {
+        graph [label=&quot;pang.postprocessors&quot;];
+        node [color=2];
+        &quot;pang.postprocessors.ManualOttavaHandler&quot; [URL=&quot;../api/pang/postprocessors.html#pang.postprocessors.ManualOttavaHandler&quot;,
+            color=black,
+            fontcolor=white,
+            label=&quot;Manual\nOttava\nHandler&quot;,
+            target=_top];
+        &quot;pang.postprocessors.OttavaHandler&quot; [URL=&quot;../api/pang/postprocessors.html#pang.postprocessors.OttavaHandler&quot;,
+            color=black,
+            fontcolor=white,
+            label=&quot;Ottava\nHandler&quot;,
+            target=_top];
+        &quot;pang.postprocessors.VerboseOttavaHandler&quot; [URL=&quot;../api/pang/postprocessors.html#pang.postprocessors.VerboseOttavaHandler&quot;,
+            color=black,
+            fontcolor=white,
+            label=&quot;Verbose\nOttava\nHandler&quot;,
+            target=_top];
+        &quot;pang.postprocessors.OttavaHandler&quot; -&gt; &quot;pang.postprocessors.ManualOttavaHandler&quot;;
+        &quot;pang.postprocessors.OttavaHandler&quot; -&gt; &quot;pang.postprocessors.VerboseOttavaHandler&quot;;
+    }
+    &quot;builtins.object&quot; -&gt; &quot;pang.postprocessors.OttavaHandler&quot;;
+}</p></object></div>
+</div>
+<hr/><p class="section-header rubric">Classes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.postprocessors.ManualOttavaHandler" title="pang.postprocessors.ManualOttavaHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ManualOttavaHandler</span></code></a></p></td>
+<td><p>Manual Ottava Handler.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.postprocessors.OttavaHandler" title="pang.postprocessors.OttavaHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OttavaHandler</span></code></a></p></td>
+<td><p>Ottava Handler.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.postprocessors.VerboseOttavaHandler" title="pang.postprocessors.VerboseOttavaHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VerboseOttavaHandler</span></code></a></p></td>
+<td><p>Verbose Ottava Handler.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt id="pang.postprocessors.ManualOttavaHandler">
+<em class="property">class </em><code class="sig-prename descclassname">pang.postprocessors.</code><code class="sig-name descname">ManualOttavaHandler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.postprocessors.ManualOttavaHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manual Ottava Handler.</p>
+<hr/><p class="class-header rubric">Attributes Summary</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.postprocessors.ManualOttavaHandler.__call__" title="pang.postprocessors.ManualOttavaHandler.__call__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code></a></p></td>
+<td><p>Call self as a function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.postprocessors.ManualOttavaHandler.n" title="pang.postprocessors.ManualOttavaHandler.n"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<hr/><p class="class-header rubric">Special methods</p>
+<dl class="py method">
+<dt id="pang.postprocessors.ManualOttavaHandler.__call__">
+<em class="property">overridden </em><code class="sig-name descname">__call__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">voice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.postprocessors.ManualOttavaHandler.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call self as a function.</p>
+</dd></dl>
+
+<hr/><p class="class-header rubric">Read-only properties</p>
+<dl class="py attribute">
+<dt id="pang.postprocessors.ManualOttavaHandler.n">
+<code class="sig-name descname">n</code><a class="headerlink" href="#pang.postprocessors.ManualOttavaHandler.n" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pang.postprocessors.OttavaHandler">
+<em class="property">class </em><code class="sig-prename descclassname">pang.postprocessors.</code><code class="sig-name descname">OttavaHandler</code><a class="headerlink" href="#pang.postprocessors.OttavaHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ottava Handler.</p>
+<hr/><p class="class-header rubric">Attributes Summary</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.postprocessors.OttavaHandler.__call__" title="pang.postprocessors.OttavaHandler.__call__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code></a></p></td>
+<td><p>Call self as a function.</p></td>
+</tr>
+</tbody>
+</table>
+<hr/><p class="class-header rubric">Special methods</p>
+<dl class="py method">
+<dt id="pang.postprocessors.OttavaHandler.__call__">
+<em class="property">overridden </em><code class="sig-name descname">__call__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">voice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.postprocessors.OttavaHandler.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call self as a function.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pang.postprocessors.VerboseOttavaHandler">
+<em class="property">class </em><code class="sig-prename descclassname">pang.postprocessors.</code><code class="sig-name descname">VerboseOttavaHandler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">high_threshold</span><span class="o">=</span><span class="default_value">32</span></em>, <em class="sig-param"><span class="n">low_threshold</span><span class="o">=</span><span class="default_value">- 31</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.postprocessors.VerboseOttavaHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verbose Ottava Handler.</p>
+<hr/><p class="class-header rubric">Attributes Summary</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.postprocessors.VerboseOttavaHandler.__call__" title="pang.postprocessors.VerboseOttavaHandler.__call__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code></a></p></td>
+<td><p>Call self as a function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.postprocessors.VerboseOttavaHandler.high_threshold" title="pang.postprocessors.VerboseOttavaHandler.high_threshold"><code class="xref py py-obj docutils literal notranslate"><span class="pre">high_threshold</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.postprocessors.VerboseOttavaHandler.low_threshold" title="pang.postprocessors.VerboseOttavaHandler.low_threshold"><code class="xref py py-obj docutils literal notranslate"><span class="pre">low_threshold</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<hr/><p class="class-header rubric">Special methods</p>
+<dl class="py method">
+<dt id="pang.postprocessors.VerboseOttavaHandler.__call__">
+<em class="property">overridden </em><code class="sig-name descname">__call__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">voice</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.postprocessors.VerboseOttavaHandler.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call self as a function.</p>
+</dd></dl>
+
+<hr/><p class="class-header rubric">Read-only properties</p>
+<dl class="py attribute">
+<dt id="pang.postprocessors.VerboseOttavaHandler.high_threshold">
+<code class="sig-name descname">high_threshold</code><a class="headerlink" href="#pang.postprocessors.VerboseOttavaHandler.high_threshold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.postprocessors.VerboseOttavaHandler.low_threshold">
+<code class="sig-name descname">low_threshold</code><a class="headerlink" href="#pang.postprocessors.VerboseOttavaHandler.low_threshold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<hr/><p class="section-header rubric">Functions</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.postprocessors.pad_voices_with_grace_skips" title="pang.postprocessors.pad_voices_with_grace_skips"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pad_voices_with_grace_skips</span></code></a></p></td>
+<td><p>Pad voices with grace skips to fix the spacing issue with full-length tuplet brackets.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py function">
+<dt id="pang.postprocessors.pad_voices_with_grace_skips">
+<code class="sig-prename descclassname">pang.postprocessors.</code><code class="sig-name descname">pad_voices_with_grace_skips</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">voices</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.postprocessors.pad_voices_with_grace_skips" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pad voices with grace skips to fix the spacing issue with full-length
+tuplet brackets.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="scoping.html" class="btn btn-neutral float-right" title="scoping" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="noteserver.html" class="btn btn-neutral float-left" title="noteserver" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Tsz Kiu Pang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
