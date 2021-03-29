@@ -56,6 +56,52 @@ Pang API
 
    <hr/>
 
+.. rubric:: :ref:`pang.indicators <pang--indicators>`
+   :class: section-header
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Classes
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.indicators.Harmonics
+   ~pang.indicators.Indicator
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Enumerations
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.indicators.IndicatorID
+
+.. raw:: html
+
+   <hr/>
+
+.. rubric:: Functions
+   :class: subsection-header
+
+.. autosummary::
+   :nosignatures:
+
+   ~pang.indicators.attach
+   ~pang.indicators.decode
+   ~pang.indicators.decode_one_leaf
+
+.. raw:: html
+
+   <hr/>
+
 .. rubric:: :ref:`pang.noteserver <pang--noteserver>`
    :class: section-header
 
@@ -201,6 +247,7 @@ Pang API
    ~pang.soundpointsgenerators.GRWSoundPointsGenerator
    ~pang.soundpointsgenerators.ManualSoundPointsGenerator
    ~pang.soundpointsgenerators.RandomWalkSoundPointsGenerator
+   ~pang.soundpointsgenerators.SoundPoint
    ~pang.soundpointsgenerators.SoundPointsGenerator
 
 .. raw:: html

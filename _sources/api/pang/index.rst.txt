@@ -24,6 +24,7 @@ pang
 
    cloud
    commands
+   indicators
    noteserver
    postprocessors
    scoping
@@ -38,6 +39,7 @@ pang
 
    cloud
    commands
+   indicators
    noteserver
    postprocessors
    scoping

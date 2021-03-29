@@ -95,6 +95,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">pang</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="cloud.html">cloud</a></li>
 <li class="toctree-l3"><a class="reference internal" href="commands.html">commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="indicators.html">indicators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="noteserver.html">noteserver</a></li>
 <li class="toctree-l3"><a class="reference internal" href="postprocessors.html">postprocessors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scoping.html">scoping</a></li>
@@ -246,48 +247,56 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.__len__" title="pang.sequences.Sequence.__len__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.__getitem__" title="pang.sequences.Sequence.__getitem__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.__repr__" title="pang.sequences.Sequence.__repr__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.__len__" title="pang.sequences.Sequence.__len__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.__repr__" title="pang.sequences.Sequence.__repr__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code></a></p></td>
 <td><p>Gets interpreter representation.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.durations" title="pang.sequences.Sequence.durations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">durations</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.durations" title="pang.sequences.Sequence.durations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">durations</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.durations_in_millesecond" title="pang.sequences.Sequence.durations_in_millesecond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">durations_in_millesecond</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.durations_in_millesecond" title="pang.sequences.Sequence.durations_in_millesecond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">durations_in_millesecond</span></code></a></p></td>
 <td><p>Returns the duration of each note in millesecond (before queue simulation).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.extend" title="pang.sequences.Sequence.extend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.extend" title="pang.sequences.Sequence.extend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code></a></p></td>
 <td><p>Extends a sequence with another.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.insert" title="pang.sequences.Sequence.insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.insert" title="pang.sequences.Sequence.insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code></a></p></td>
 <td><p>Inserts a sequence into another.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.instances" title="pang.sequences.Sequence.instances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">instances</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.instances" title="pang.sequences.Sequence.instances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">instances</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.nservers" title="pang.sequences.Sequence.nservers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nservers</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.nservers" title="pang.sequences.Sequence.nservers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nservers</span></code></a></p></td>
 <td><p>Returns the number of servers.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.pitches" title="pang.sequences.Sequence.pitches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pitches</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.pitches" title="pang.sequences.Sequence.pitches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pitches</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.sequence_duration" title="pang.sequences.Sequence.sequence_duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence_duration</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.sequence_duration" title="pang.sequences.Sequence.sequence_duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence_duration</span></code></a></p></td>
 <td><p>Returns the sequence duration in seconds.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.servers" title="pang.sequences.Sequence.servers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">servers</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.servers" title="pang.sequences.Sequence.servers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">servers</span></code></a></p></td>
 <td><p>Returns the servers that are attached to this sequence.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.simulate_queue" title="pang.sequences.Sequence.simulate_queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">simulate_queue</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.simulate_queue" title="pang.sequences.Sequence.simulate_queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">simulate_queue</span></code></a></p></td>
 <td><p>Simulate the queue based on the queue type.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.sequences.Sequence.superpose" title="pang.sequences.Sequence.superpose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">superpose</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.sequences.Sequence.superpose" title="pang.sequences.Sequence.superpose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">superpose</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
 <hr/><p class="class-header rubric">Special methods</p>
+<dl class="py method">
+<dt id="pang.sequences.Sequence.__getitem__">
+<code class="sig-name descname">__getitem__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt id="pang.sequences.Sequence.__len__">
 <code class="sig-name descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pang.sequences.Sequence.__len__" title="Permalink to this definition">¶</a></dt>

@@ -95,6 +95,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">pang</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="cloud.html">cloud</a></li>
 <li class="toctree-l3"><a class="reference internal" href="commands.html">commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="indicators.html">indicators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="noteserver.html">noteserver</a></li>
 <li class="toctree-l3"><a class="reference internal" href="postprocessors.html">postprocessors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scoping.html">scoping</a></li>
@@ -179,7 +180,7 @@
   <div class="section" id="pang">
 <span id="id1"></span><h1>pang<a class="headerlink" href="#pang" title="Permalink to this headline">¶</a></h1>
 <span class="target" id="module-pang"></span><div class="svg-container docutils container">
-<div class="graphviz"><object data="../../_images/inheritance-d02d8dd1009cc8a31c66752f902ebca545aa4729.svg" type="image/svg+xml" class="inheritance graphviz">
+<div class="graphviz"><object data="../../_images/inheritance-d5383ae5040d84617455b0c820b6609fbd5d3a34.svg" type="image/svg+xml" class="inheritance graphviz">
 <p class="warning">digraph InheritanceGraph {
 	graph [bgcolor=transparent,
 		color=lightsteelblue2,
@@ -212,16 +213,23 @@
 			label=object,
 			target=_top];
 	}
+	subgraph cluster_enum {
+		graph [label=enum];
+		node [color=2];
+		&quot;enum.Enum&quot;	[URL=&quot;https://docs.python.org/3.9/library/enum.html#enum.Enum&quot;,
+			label=Enum,
+			target=_top];
+	}
 	subgraph &quot;cluster_pang.cloud&quot; {
 		graph [label=&quot;pang.cloud&quot;];
-		node [color=2];
+		node [color=3];
 		&quot;pang.cloud.Cloud&quot;	[URL=&quot;../api/pang/cloud.html#pang.cloud.Cloud&quot;,
 			label=Cloud,
 			target=_top];
 	}
 	subgraph &quot;cluster_pang.commands&quot; {
 		graph [label=&quot;pang.commands&quot;];
-		node [color=3];
+		node [color=4];
 		&quot;pang.commands.Command&quot;	[URL=&quot;../api/pang/commands.html#pang.commands.Command&quot;,
 			label=Command,
 			target=_top];
@@ -230,16 +238,30 @@
 			target=_top];
 		&quot;pang.commands.Command&quot; -&gt; &quot;pang.commands.QuantizeSequenceCommand&quot;	[minlen=1];
 	}
+	subgraph &quot;cluster_pang.indicators&quot; {
+		graph [label=&quot;pang.indicators&quot;];
+		node [color=5];
+		&quot;pang.indicators.Harmonics&quot;	[URL=&quot;../api/pang/indicators.html#pang.indicators.Harmonics&quot;,
+			label=Harmonics,
+			target=_top];
+		&quot;pang.indicators.Indicator&quot;	[URL=&quot;../api/pang/indicators.html#pang.indicators.Indicator&quot;,
+			label=Indicator,
+			target=_top];
+		&quot;pang.indicators.Indicator&quot; -&gt; &quot;pang.indicators.Harmonics&quot;	[minlen=1];
+		&quot;pang.indicators.IndicatorID&quot;	[URL=&quot;../api/pang/indicators.html#pang.indicators.IndicatorID&quot;,
+			label=&quot;Indicator\nID&quot;,
+			target=_top];
+	}
 	subgraph &quot;cluster_pang.noteserver&quot; {
 		graph [label=&quot;pang.noteserver&quot;];
-		node [color=4];
+		node [color=6];
 		&quot;pang.noteserver.NoteServer&quot;	[URL=&quot;../api/pang/noteserver.html#pang.noteserver.NoteServer&quot;,
 			label=&quot;Note\nServer&quot;,
 			target=_top];
 	}
 	subgraph &quot;cluster_pang.postprocessors&quot; {
 		graph [label=&quot;pang.postprocessors&quot;];
-		node [color=5];
+		node [color=7];
 		&quot;pang.postprocessors.ManualOttavaHandler&quot;	[URL=&quot;../api/pang/postprocessors.html#pang.postprocessors.ManualOttavaHandler&quot;,
 			label=&quot;Manual\nOttava\nHandler&quot;,
 			target=_top];
@@ -254,28 +276,28 @@
 	}
 	subgraph &quot;cluster_pang.scoping&quot; {
 		graph [label=&quot;pang.scoping&quot;];
-		node [color=6];
+		node [color=8];
 		&quot;pang.scoping.Scope&quot;	[URL=&quot;../api/pang/scoping.html#pang.scoping.Scope&quot;,
 			label=Scope,
 			target=_top];
 	}
 	subgraph &quot;cluster_pang.segmentmaker&quot; {
 		graph [label=&quot;pang.segmentmaker&quot;];
-		node [color=7];
+		node [color=9];
 		&quot;pang.segmentmaker.SegmentMaker&quot;	[URL=&quot;../api/pang/segmentmaker.html#pang.segmentmaker.SegmentMaker&quot;,
 			label=&quot;Segment\nMaker&quot;,
 			target=_top];
 	}
 	subgraph &quot;cluster_pang.sequences&quot; {
 		graph [label=&quot;pang.sequences&quot;];
-		node [color=8];
+		node [color=1];
 		&quot;pang.sequences.Sequence&quot;	[URL=&quot;../api/pang/sequences.html#pang.sequences.Sequence&quot;,
 			label=Sequence,
 			target=_top];
 	}
 	subgraph &quot;cluster_pang.soundpointsgenerators&quot; {
 		graph [label=&quot;pang.soundpointsgenerators&quot;];
-		node [color=9];
+		node [color=2];
 		&quot;pang.soundpointsgenerators.AtaxicSoundPointsGenerator&quot;	[URL=&quot;../api/pang/soundpointsgenerators.html#pang.soundpointsgenerators.AtaxicSoundPointsGenerator&quot;,
 			label=&quot;Ataxic\nSound\nPoints\nGenerator&quot;,
 			target=_top];
@@ -288,22 +310,29 @@
 		&quot;pang.soundpointsgenerators.RandomWalkSoundPointsGenerator&quot;	[URL=&quot;../api/pang/soundpointsgenerators.html#pang.soundpointsgenerators.RandomWalkSoundPointsGenerator&quot;,
 			label=&quot;Random\nWalk\nSound\nPoints\nGenerator&quot;,
 			target=_top];
+		&quot;pang.soundpointsgenerators.SoundPoint&quot;	[URL=&quot;../api/pang/soundpointsgenerators.html#pang.soundpointsgenerators.SoundPoint&quot;,
+			label=&quot;Sound\nPoint&quot;,
+			target=_top];
 		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot;	[URL=&quot;../api/pang/soundpointsgenerators.html#pang.soundpointsgenerators.SoundPointsGenerator&quot;,
 			label=&quot;Sound\nPoints\nGenerator&quot;,
 			target=_top];
 		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.AtaxicSoundPointsGenerator&quot;	[minlen=1];
 		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.GRWSoundPointsGenerator&quot;	[minlen=2];
-		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.ManualSoundPointsGenerator&quot;	[minlen=1];
-		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.RandomWalkSoundPointsGenerator&quot;	[minlen=2];
+		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.ManualSoundPointsGenerator&quot;	[minlen=3];
+		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.RandomWalkSoundPointsGenerator&quot;	[minlen=1];
 	}
-	&quot;builtins.object&quot; -&gt; &quot;pang.cloud.Cloud&quot;	[minlen=1];
-	&quot;builtins.object&quot; -&gt; &quot;pang.commands.Command&quot;	[minlen=2];
-	&quot;builtins.object&quot; -&gt; &quot;pang.noteserver.NoteServer&quot;	[minlen=1];
+	&quot;builtins.object&quot; -&gt; &quot;enum.Enum&quot;	[minlen=1];
+	&quot;builtins.object&quot; -&gt; &quot;pang.cloud.Cloud&quot;	[minlen=2];
+	&quot;builtins.object&quot; -&gt; &quot;pang.commands.Command&quot;	[minlen=3];
+	&quot;builtins.object&quot; -&gt; &quot;pang.indicators.Indicator&quot;	[minlen=1];
+	&quot;builtins.object&quot; -&gt; &quot;pang.noteserver.NoteServer&quot;	[minlen=2];
 	&quot;builtins.object&quot; -&gt; &quot;pang.postprocessors.OttavaHandler&quot;;
-	&quot;builtins.object&quot; -&gt; &quot;pang.scoping.Scope&quot;	[minlen=2];
+	&quot;builtins.object&quot; -&gt; &quot;pang.scoping.Scope&quot;	[minlen=3];
 	&quot;builtins.object&quot; -&gt; &quot;pang.segmentmaker.SegmentMaker&quot;	[minlen=1];
 	&quot;builtins.object&quot; -&gt; &quot;pang.sequences.Sequence&quot;	[minlen=2];
+	&quot;builtins.object&quot; -&gt; &quot;pang.soundpointsgenerators.SoundPoint&quot;	[minlen=3];
 	&quot;builtins.object&quot; -&gt; &quot;pang.soundpointsgenerators.SoundPointsGenerator&quot;;
+	&quot;enum.Enum&quot; -&gt; &quot;pang.indicators.IndicatorID&quot;	[minlen=1];
 }</p></object></div>
 </div>
 <hr/><p class="section-header rubric">Subpackages</p>
@@ -321,28 +350,31 @@
 <tr class="row-even"><td><p><a class="reference internal" href="commands.html#module-pang.commands" title="pang.commands"><code class="xref py py-obj docutils literal notranslate"><span class="pre">commands</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="noteserver.html#module-pang.noteserver" title="pang.noteserver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">noteserver</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="indicators.html#module-pang.indicators" title="pang.indicators"><code class="xref py py-obj docutils literal notranslate"><span class="pre">indicators</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="postprocessors.html#module-pang.postprocessors" title="pang.postprocessors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">postprocessors</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="noteserver.html#module-pang.noteserver" title="pang.noteserver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">noteserver</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scoping.html#module-pang.scoping" title="pang.scoping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scoping</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="postprocessors.html#module-pang.postprocessors" title="pang.postprocessors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">postprocessors</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="segmentmaker.html#module-pang.segmentmaker" title="pang.segmentmaker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">segmentmaker</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scoping.html#module-pang.scoping" title="pang.scoping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scoping</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="sequences.html#module-pang.sequences" title="pang.sequences"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequences</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="segmentmaker.html#module-pang.segmentmaker" title="pang.segmentmaker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">segmentmaker</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="sieves.html#module-pang.sieves" title="pang.sieves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sieves</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="sequences.html#module-pang.sequences" title="pang.sequences"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sequences</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="soundpointsgenerators.html#module-pang.soundpointsgenerators" title="pang.soundpointsgenerators"><code class="xref py py-obj docutils literal notranslate"><span class="pre">soundpointsgenerators</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="sieves.html#module-pang.sieves" title="pang.sieves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sieves</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="templates.html#module-pang.templates" title="pang.templates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">templates</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="soundpointsgenerators.html#module-pang.soundpointsgenerators" title="pang.soundpointsgenerators"><code class="xref py py-obj docutils literal notranslate"><span class="pre">soundpointsgenerators</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="templates.html#module-pang.templates" title="pang.templates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">templates</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>

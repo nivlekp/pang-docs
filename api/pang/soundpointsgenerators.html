@@ -95,6 +95,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">pang</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="cloud.html">cloud</a></li>
 <li class="toctree-l3"><a class="reference internal" href="commands.html">commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="indicators.html">indicators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="noteserver.html">noteserver</a></li>
 <li class="toctree-l3"><a class="reference internal" href="postprocessors.html">postprocessors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scoping.html">scoping</a></li>
@@ -181,7 +182,7 @@
   <div class="section" id="module-pang.soundpointsgenerators">
 <span id="soundpointsgenerators"></span><span id="pang-soundpointsgenerators"></span><h1>soundpointsgenerators<a class="headerlink" href="#module-pang.soundpointsgenerators" title="Permalink to this headline">¶</a></h1>
 <div class="svg-container docutils container">
-<div class="graphviz"><object data="../../_images/inheritance-cdaca3d49b445b790e23b7932921d7b37de82931.svg" type="image/svg+xml" class="inheritance graphviz">
+<div class="graphviz"><object data="../../_images/inheritance-87332931006819b7f630e9b029401c890ea6cefe.svg" type="image/svg+xml" class="inheritance graphviz">
 <p class="warning">digraph InheritanceGraph {
 	graph [bgcolor=transparent,
 		color=lightsteelblue2,
@@ -237,6 +238,11 @@
 			fontcolor=white,
 			label=&quot;Random\nWalk\nSound\nPoints\nGenerator&quot;,
 			target=_top];
+		&quot;pang.soundpointsgenerators.SoundPoint&quot;	[URL=&quot;../api/pang/soundpointsgenerators.html#pang.soundpointsgenerators.SoundPoint&quot;,
+			color=black,
+			fontcolor=white,
+			label=&quot;Sound\nPoint&quot;,
+			target=_top];
 		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot;	[URL=&quot;../api/pang/soundpointsgenerators.html#pang.soundpointsgenerators.SoundPointsGenerator&quot;,
 			color=black,
 			fontcolor=white,
@@ -247,7 +253,8 @@
 		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.ManualSoundPointsGenerator&quot;	[minlen=1];
 		&quot;pang.soundpointsgenerators.SoundPointsGenerator&quot; -&gt; &quot;pang.soundpointsgenerators.RandomWalkSoundPointsGenerator&quot;	[minlen=2];
 	}
-	&quot;builtins.object&quot; -&gt; &quot;pang.soundpointsgenerators.SoundPointsGenerator&quot;	[minlen=1];
+	&quot;builtins.object&quot; -&gt; &quot;pang.soundpointsgenerators.SoundPoint&quot;	[minlen=1];
+	&quot;builtins.object&quot; -&gt; &quot;pang.soundpointsgenerators.SoundPointsGenerator&quot;;
 }</p></object></div>
 </div>
 <hr/><p class="section-header rubric">Classes</p>
@@ -269,7 +276,10 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#pang.soundpointsgenerators.RandomWalkSoundPointsGenerator" title="pang.soundpointsgenerators.RandomWalkSoundPointsGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RandomWalkSoundPointsGenerator</span></code></a></p></td>
 <td><p>Sound points generator, with pitches chosen with a random walk process.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pang.soundpointsgenerators.SoundPointsGenerator" title="pang.soundpointsgenerators.SoundPointsGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SoundPointsGenerator</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.soundpointsgenerators.SoundPoint" title="pang.soundpointsgenerators.SoundPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SoundPoint</span></code></a></p></td>
+<td><p>SoundPoint / Event.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.soundpointsgenerators.SoundPointsGenerator" title="pang.soundpointsgenerators.SoundPointsGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SoundPointsGenerator</span></code></a></p></td>
 <td><p>Abstract base sound-point generator.</p></td>
 </tr>
 </tbody>
@@ -298,7 +308,7 @@
 </pre></div>
 </div>
 <div class="uqbar-book">
-    <a href="../../_images/lilypond-6b9f14a131158a1ea421fd3181a68f5cb7bfa9c02d8ef0832f4f8447e875ab27.ly"><img src="../../_images/lilypond-6b9f14a131158a1ea421fd3181a68f5cb7bfa9c02d8ef0832f4f8447e875ab27.cropped.svg"/></a>
+    <a href="../../_images/lilypond-c62c8981835b4450f62eb3608271acbd9f17a86e9dd775d4676958080d5239dd.ly"><img src="../../_images/lilypond-c62c8981835b4450f62eb3608271acbd9f17a86e9dd775d4676958080d5239dd.cropped.svg"/></a>
 </div></div>
 <hr/><p class="class-header rubric">Special methods</p>
 <div class="inherited docutils container">
@@ -342,7 +352,7 @@
 </pre></div>
 </div>
 <div class="uqbar-book">
-    <a href="../../_images/lilypond-06def7e29e5ce0344bdce1d25ec2ce67a81f233e86342ce66a3741b55be6eac7.ly"><img src="../../_images/lilypond-06def7e29e5ce0344bdce1d25ec2ce67a81f233e86342ce66a3741b55be6eac7.cropped.svg"/></a>
+    <a href="../../_images/lilypond-34d247124b5af28bfa647aef1cc9719af4faedc169c5608dd66281751c3bc920.ly"><img src="../../_images/lilypond-34d247124b5af28bfa647aef1cc9719af4faedc169c5608dd66281751c3bc920.cropped.svg"/></a>
 </div></div>
 <hr/><p class="class-header rubric">Special methods</p>
 <div class="inherited docutils container">
@@ -400,7 +410,7 @@
 </pre></div>
 </div>
 <div class="uqbar-book">
-    <a href="../../_images/lilypond-71c7e9f346705052ccfe157a713f255b5808be3ca237aca3a37e360bf7f57924.ly"><img src="../../_images/lilypond-71c7e9f346705052ccfe157a713f255b5808be3ca237aca3a37e360bf7f57924.cropped.svg"/></a>
+    <a href="../../_images/lilypond-fb07ac563e719a8bd6c145c624447d42fe4ef4fea5279a0f18e2273b345c4bf1.ly"><img src="../../_images/lilypond-fb07ac563e719a8bd6c145c624447d42fe4ef4fea5279a0f18e2273b345c4bf1.cropped.svg"/></a>
 </div></div>
 <hr/><p class="class-header rubric">Attributes Summary</p>
 <table class="longtable docutils align-default">
@@ -455,7 +465,7 @@
 </pre></div>
 </div>
 <div class="uqbar-book">
-    <a href="../../_images/lilypond-7267ab5a4802661e37dbcdf89a90691895cbd5764915d71d57fb0e01e509d0e9.ly"><img src="../../_images/lilypond-7267ab5a4802661e37dbcdf89a90691895cbd5764915d71d57fb0e01e509d0e9.cropped.svg"/></a>
+    <a href="../../_images/lilypond-cef0ff07729369a95c9e459d717f9042ceaffd6a1448779c392c7f96d9aeea39.ly"><img src="../../_images/lilypond-cef0ff07729369a95c9e459d717f9042ceaffd6a1448779c392c7f96d9aeea39.cropped.svg"/></a>
 </div></div>
 <hr/><p class="class-header rubric">Special methods</p>
 <div class="inherited docutils container">
@@ -474,6 +484,46 @@
 </dd></dl>
 
 </div>
+</dd></dl>
+
+<dl class="py class">
+<dt id="pang.soundpointsgenerators.SoundPoint">
+<em class="property">class </em><code class="sig-prename descclassname">pang.soundpointsgenerators.</code><code class="sig-name descname">SoundPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">instance</span></em>, <em class="sig-param"><span class="n">duration</span></em>, <em class="sig-param"><span class="n">pitch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pang.soundpointsgenerators.SoundPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>SoundPoint / Event.</p>
+<hr/><p class="class-header rubric">Attributes Summary</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.soundpointsgenerators.SoundPoint.duration" title="pang.soundpointsgenerators.SoundPoint.duration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">duration</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pang.soundpointsgenerators.SoundPoint.instance" title="pang.soundpointsgenerators.SoundPoint.instance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">instance</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pang.soundpointsgenerators.SoundPoint.pitch" title="pang.soundpointsgenerators.SoundPoint.pitch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pitch</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<hr/><p class="class-header rubric">Read/write properties</p>
+<dl class="py attribute">
+<dt id="pang.soundpointsgenerators.SoundPoint.duration">
+<code class="sig-name descname">duration</code><a class="headerlink" href="#pang.soundpointsgenerators.SoundPoint.duration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.soundpointsgenerators.SoundPoint.instance">
+<code class="sig-name descname">instance</code><a class="headerlink" href="#pang.soundpointsgenerators.SoundPoint.instance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="pang.soundpointsgenerators.SoundPoint.pitch">
+<code class="sig-name descname">pitch</code><a class="headerlink" href="#pang.soundpointsgenerators.SoundPoint.pitch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 <dl class="py class">

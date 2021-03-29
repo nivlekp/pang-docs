@@ -26,6 +26,7 @@ soundpointsgenerators
    ~GRWSoundPointsGenerator
    ~ManualSoundPointsGenerator
    ~RandomWalkSoundPointsGenerator
+   ~SoundPoint
    ~SoundPointsGenerator
 
 .. autoclass:: AtaxicSoundPointsGenerator
@@ -105,6 +106,35 @@ soundpointsgenerators
    .. container:: inherited
 
       .. automethod:: RandomWalkSoundPointsGenerator.__repr__
+
+.. autoclass:: SoundPoint
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Attributes Summary
+      :class: class-header
+
+   .. autosummary::
+      :nosignatures:
+
+      duration
+      instance
+      pitch
+
+   .. raw:: html
+
+      <hr/>
+
+   .. rubric:: Read/write properties
+      :class: class-header
+
+   .. autoattribute:: SoundPoint.duration
+
+   .. autoattribute:: SoundPoint.instance
+
+   .. autoattribute:: SoundPoint.pitch
 
 .. autoclass:: SoundPointsGenerator
 
